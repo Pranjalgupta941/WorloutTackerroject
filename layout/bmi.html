@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+       <!--Nav bar start-->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../inmages/new.svg" alt="logo" width="50px"> Workout Tracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse c1" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active mx-2" aria-current="page" href="./landingpage.html">
+                    <img src="../inmages/home.png" alt="#" width="30px" height="30px">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exercise List
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./workoutchest.html" target="_parent ">Chest</a></li>
+                  <li><a class="dropdown-item" href="./workoutback.html" target="_parent ">Back Body</a></li>
+                  <li><a class="dropdown-item" href="./workoutbiceps.html" target="_parent ">Bicep</a></li>
+                  <li><a class="dropdown-item" href="./workoutlegs.html" target="_parent ">Legs</a></li>
+                  <li><a class="dropdown-item" href="./workouttricep.html" target="_parent ">Tricep</a></li>
+                  <li><a class="dropdown-item" href="./workoutsholder.html" target="_parent ">Shoulder</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link active mx-2" aria-current="page" href="./progresstracking.html">
+                      Project Tracking</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../inmages/man.png" alt="#" width="30px" height="30px">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./loginpage.html" target="_parent ">Login</a></li>
+                  <li><a class="dropdown-item" href="./registrationform.html">Register</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Nav bar end-->
+   
+<div class="section bg-dark " style="height: 100px; padding:30px;">
+  <h1  style="text-align: center; color:aliceblue; ">Body Mass Index (BMI) </h1>
+</div>
+<div class="conatiner mt-4" >
+<div class="container">
+  <h3>BMI Calculator</h3>
+  <p class="fs-5 fw-normal">Knowing BMI can help adult men and women understand their overall health. Use the BMI calculator below to determine your body mass index by inputting your height and weight.</p>
+</div>
+<div class="conatiner" style="padding:10px 0px 0px 100px; ">
+  <form action="">
+    <div>
+      <input type="number" id="userweight" class=" mt-4 form-control" placeholder="weight (kg) " style="width: 500px;">
+    </div>
+    <div><input type="number" id="userheight" class="mt-4 form-control  " placeholder="height (cm)" style="width: 500px;"></div>
+  </form>
+  <div class="section " >
+    <div>
+      <button type="button" class="control-form mt-2 bg-g" onclick="cal1()">Calculate</button>
+    </div>
+    <div class="">
+        <h4 id="h4tag"></h4>
+    </div>
+  </div>
+</div>
+<div class="mt-4  " style="padding-left: 90px; width: 900px;" >
+  <h3 >Understanding your Body Mass Index</h3>
+  <p >Now that you know your body mass index you are one step closer to mastering your overall health. Find out how to understand your BMI</p>
+  <ul>
+    <li>
+      <p ><b style="color: red;">If your BMI is below 18.5:</b>
+      Your BMI is considered underweight. Keep in mind that an underweight BMI calculation may pose certain health risks. Please consult your healthcare provider for more information about BMI calculations.</p>
+    </li>
+    <li >
+      <p ><b style="color: red;">If your BMI is between 18.5 – 24.9:</b>Your BMI is considered normal. This healthy weight helps reduce your risk of serious health conditions and means you’re close to your fitness goals.</p>
+    </li>
+    <li >
+      <p ><b style="color: red;">If your BMI is between 25 – 29.9:</b>
+ You’re in the overweight range. You are at increased risk for a variety of illnesses at your present weight. You should lose weight by changing your diet and exercising more.</p>
+    </li>
+    <li >
+      <p ><b style="color: red;">If your BMI is above 30:</b> Your BMI is considered overweight. Being overweight may increase your risk of cardiovascular disease. Consider making lifestyle changes through healthy eating and fitness to improve your health.</p>
+
+    </li>
+  </ul>
+  Individuals who fall into the BMI range of 25 to 34.9, and have a waist size of over 40 inches for men and 35 inches for women, are considered to be at especially high risk for health problems.
+</div>
+    </div>
+    
+    <script>
+      function cal1(){
+       let x=document.getElementById("userweight").value;
+        let y=document.getElementById("userheight").value;
+        let z= (x/(y**2))*10000;
+        z=parseFloat(z);
+        z=parsedValue.toFixed(2);
+       // document.getElementById("h4tag").innerHTML= "Your BMI is" +" "+ z;
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>LoginPage</title>
+    <script src="../jss/eamil.js"></script>
+</head>
+</head>
+<body>
+    <section class="vh-100" style="background-color: #508bfc;">
+    <!--Nav bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../inmages/new.svg" alt="logo" width="50px"> Workout Tracker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse c1" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active mx-2" aria-current="page" href="../index.html">
+                  <img src="../inmages/home.png" alt="#" width="30px" height="30px"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Exercise List
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../layout/workoutchest.html" target="_parent ">Chest</a></li>
+                <li><a class="dropdown-item" href="../layout/workoutback.html" target="_parent ">Back Body</a></li>
+                <li><a class="dropdown-item" href="../layout/workoutbiceps.html" target="_parent ">Bicep</a></li>
+                <li><a class="dropdown-item" href="../layout/workoutlegs.html"target="_parent ">Legs</a></li>
+                <li><a class="dropdown-item" href="../layout/workouttricep.html" target="_parent ">Tricep</a></li>
+                <li><a class="dropdown-item" href="../layout/workoutsholder.html" target="_parent ">Shoulder</a></li>
+              </ul>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-2" aria-current="page" href="./progresstracking.html">
+                    Progress Tracking</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../inmages/man.png" alt="#" width="30px" height="30px">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./loginpage.html" target="_parent ">Login</a></li>
+                <li><a class="dropdown-item" href="./rigs.html">Register</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Nav bar end-->
+        <div class="container h-80 py-3">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">Login</h3>
+      
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="typeEmailX-2">Email</label>
+                    <input type="email" id="user" class="form-control form-control-lg" placeholder="mail@gmail.com" required/>
+                  </div>
+      
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="typePasswordX-2">Password</label>
+                    <input type="password" id="pass" class="form-control form-control-lg" placeholder="password" required />
+                  </div>
+      
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-start mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                    <label class="form-check-label" for="form1Example3" onmouseover=""> Remember password </label>
+                  </div>
+      
+                  <button class="btn btn-primary btn-lg btn-block" onclick="submit1()" type="submit">Login</button>
+      
+                  <hr class="my-4">
+      
+                  <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+                    type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+                  <button class="btn btn-lg btn-block btn-primary mt-2 mb-2" style="background-color: #3b5998;"
+                    type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span style="color: darkblue;"><b>Get connected with us on social networks:</b></span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h3 class="text-uppercase fw-bold mb-4" style="color: darkblue;">
+              <i class="fas fa-gem me-3 " ></i>Workout Tracker
+            </h3>
+            <p>
+                <b>"I have nothing in common with lazy people who blame others for their lack of success. Great things come from hard work and perseverance. No excuses."</b>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4" style="color: darkblue;"><b>Exercise</b>  
+            </h5>
+            <p>
+              <a href="./workoutchest.html" class="text-reset" ><b>Chest</b></a>
+            </p>
+            <p>
+              <a href="./workoutback.html" class="text-reset" ><b>Back Body</b></a>
+            </p>
+            <p>
+              <a href="./workoutbiceps.html" class="text-reset" ><b>Biceps</b></a>
+            </p>
+            <p>
+              <a href="./workoutlegs.html" class="text-reset" ><b>Legs</b></a>
+            </p>
+            <p>
+                <a href="./workouttricep.html" class="text-reset"> <b>Triceps</b></a>
+              </p>
+              <p>
+                <a href="./workoutsholder.html" class="text-reset" ><b>Shoulder</b></a>
+              </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+             <h3><a href="./about.html">About</a></h3>
+          </div>
+          
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase fw-bold mb-4" style="color: darkblue;"><b>Contact</b></h5>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Ghaziabad, 201009 , UP</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              WorkoutTracker@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +91 9310169151</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +91 8881550714</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="../index.html">WorkoutTracker</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+      </section>
+</body>
+</html>

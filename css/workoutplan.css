@@ -1,0 +1,28 @@
+.h1{
+    margin-left: 500px;
+
+}
+.h1a
+{
+    text-decoration: underline;
+}
+.h3a{
+    text-decoration: underline;
+}
+.row
+{
+    margin-top: 20px;
+}
+.ul{
+    text-decoration: solid;
+    
+}
+.card{
+    width: 300px;
+    height: 200px;
+    border: solid;
+}
+.c2{
+    margin-left: 200px;   
+}
+
